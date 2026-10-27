@@ -1,1 +1,71 @@
-<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Heb je een vraagstuk of opdracht? Neem contact op voor een vrijblijvend kennismakingsgesprek."><title>Contact | VWConsulting</title><link rel="stylesheet" href="assets/style.css"></head><body><header class="header"><a class="brand" href="index.html"><img class="brandlogo" src="assets/logo-vwconsulting.png" alt="Van Werkhoven Management Consulting"></a><button class="menu" aria-label="Menu openen" aria-expanded="false">☰</button><nav><a href="index.html">Home</a><a href="diensten.html">Diensten</a><a href="over-mij.html">Over mij</a><a href="contact.html">Contact</a></nav></header><main><section class="hero"><p class="eyebrow">VAN WERKHOVEN MANAGEMENT CONSULTING</p><h1>Samen vooruit.<br><em>Maak kennis met VWConsulting.</em></h1><p class="lead">Heb je een vraagstuk of opdracht? Neem contact op voor een vrijblijvend kennismakingsgesprek.</p><a class="button" href="contact.html">Laten we kennismaken <span>↗</span></a></section><section class="contact"><form id="contactForm"><label>Naam<input name="name" required autocomplete="name"></label><label>E-mailadres<input type="email" name="email" required autocomplete="email"></label><label>Bericht<textarea name="message" rows="6" required></textarea></label><label class="consent"><input type="checkbox" required> Ik geef toestemming om mijn gegevens te gebruiken om op mijn bericht te reageren.</label><button type="submit">Verstuur bericht</button><p id="formStatus" role="status"></p></form><aside><h3>Direct contact</h3><p>Het formulier is voorbereid. Voor verzending naar je zakelijke mailbox moet nog een beveiligde formulierdienst worden gekoppeld.</p></aside></section></main><footer><span>© <span id="year"></span> VWConsulting</span><span>Analyse. Verbetering. Realisatie.</span></footer><script src="assets/app.js"></script></body></html>
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Heb je een vraagstuk of opdracht? Neem contact op voor een vrijblijvend kennismakingsgesprek.">
+<title>Contact | VWConsulting</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="index.html"><img class="brandlogo" src="assets/logo-vwconsulting.png" alt="Van Werkhoven Management Consulting"></a>
+  <button class="menu" aria-label="Menu openen" aria-expanded="false">☰</button>
+  <nav><a href="index.html">Home</a><a href="diensten.html">Diensten</a><a href="over-mij.html">Over mij</a><a href="contact.html" aria-current="page">Contact</a></nav>
+</header>
+<main>
+<section class="hero">
+  <p class="eyebrow">VAN WERKHOVEN MANAGEMENT CONSULTING</p>
+  <h1>Samen vooruit.<br><em>Maak kennis met VWConsulting.</em></h1>
+  <p class="lead">Heb je een vraagstuk of opdracht? Neem contact op voor een vrijblijvend kennismakingsgesprek.</p>
+</section>
+<section class="contact">
+  <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+    <!-- Web3Forms access key: aan te vragen op web3forms.com met info@vwconsulting.nl -->
+    <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY">
+    <input type="hidden" name="subject" value="Nieuw bericht via vwconsulting.nl">
+    <input type="hidden" name="from_name" value="Website VWConsulting">
+    <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
+    <label>Naam<input name="name" required autocomplete="name"></label>
+    <label>E-mailadres<input type="email" name="email" required autocomplete="email"></label>
+    <label>Telefoonnummer (optioneel)<input type="tel" name="phone" autocomplete="tel"></label>
+    <label>Bericht<textarea name="message" rows="6" required></textarea></label>
+    <label class="consent"><input type="checkbox" required> <span>Ik geef toestemming om mijn gegevens te gebruiken om op mijn bericht te reageren. Zie de <a href="privacy.html">privacyverklaring</a>.</span></label>
+    <button type="submit">Verstuur bericht</button>
+    <p id="formStatus" role="status"></p>
+  </form>
+  <aside>
+    <h3>Direct contact</h3>
+    <ul class="details">
+      <li><strong>Johan van Werkhoven</strong></li>
+      <li><a href="mailto:info@vwconsulting.nl">info@vwconsulting.nl</a></li>
+      <li><a href="tel:+31613727450">06 - 13 72 74 50</a></li>
+      <li>Woudenberg</li>
+    </ul>
+    <ul class="details small">
+      <li>KvK 97750484</li>
+      <li>btw NL001175262B80</li>
+    </ul>
+  </aside>
+</section>
+</main>
+<footer>
+  <div class="footer-main">
+    <strong>Van Werkhoven Management Consulting</strong>
+    <span>Slimmer werken. Meer resultaat.</span>
+  </div>
+  <div class="footer-contact">
+    <a href="mailto:info@vwconsulting.nl">info@vwconsulting.nl</a>
+    <a href="tel:+31613727450">06 - 13 72 74 50</a>
+    <span>Woudenberg</span>
+  </div>
+  <div class="footer-legal">
+    <span>KvK 97750484</span>
+    <span>btw NL001175262B80</span>
+    <a href="privacy.html">Privacyverklaring</a>
+    <span>© <span id="year"></span> VWConsulting</span>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
