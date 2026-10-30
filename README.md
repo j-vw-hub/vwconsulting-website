@@ -13,7 +13,7 @@ Upload de inhoud van deze map naar de webroot van je hostingpakket via de bestan
 - Domein, HTTPS en hostingconfiguratie bij Antagonist controleren.
 
 ## Opbouw
-- Lettertypen (DM Sans, Manrope) staan lokaal in `assets/fonts/`, zodat er geen verbinding met Google nodig is.
+- Lettertype (Manrope) staan lokaal in `assets/fonts/`, zodat er geen verbinding met Google nodig is.
 - Het contactformulier verstuurt via Web3Forms (account info@vwconsulting.nl); de access key staat in `contact.html`.
 - `privacy.html` beschrijft de verwerking via het contactformulier; pas deze aan als er analysetools of cookies bijkomen.
 
