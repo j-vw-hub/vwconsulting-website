@@ -9,7 +9,7 @@ Open `index.html` in je browser. Voor GitHub Pages: upload de bestanden naar een
 Upload de inhoud van deze map naar de webroot van je hostingpakket via de bestandsbeheerder of SFTP, na controle van bestaande bestanden en het maken van een back-up. Verander geen DNS- of e-mailrecords zonder controle.
 
 ## Nog af te ronden
-- Projecten en opdrachtgevers toevoegen.
+- Projecten en opdrachtgevers: eerste versie op basis van cv (over-mij.html); aanvullen met nieuwe opdrachten.
 - Domein, HTTPS en hostingconfiguratie bij Antagonist controleren.
 
 ## Opbouw

@@ -131,4 +131,34 @@ footer a:hover{color:#fff;text-decoration:underline}
   .section,.contact{padding:56px 24px}
 }
 @media(max-width:460px){.services,.steps{grid-template-columns:1fr}}
+/* Over mij: stats, cards, cases, timeline */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);padding:0 var(--pad);margin-top:-48px;position:relative}
+.stats div{background:#fff;padding:26px;box-shadow:0 14px 30px #0f1b4c14;border-right:1px solid var(--line);display:grid;gap:4px}
+.stats div:last-child{border-right:0}
+.stats strong{font-size:24px;letter-spacing:-.02em}
+.stats span{font-size:14px;color:var(--muted)}
+.prose.wide{max-width:760px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid3 article{background:#fff;padding:26px;border-top:3px solid var(--navy);display:grid;gap:8px;align-content:start}
+.grid3 p,.cases p,.timeline li{font-size:15px;line-height:1.65;color:var(--muted)}
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.cases article{border:1px solid var(--line);padding:30px;display:grid;gap:10px;align-content:start}
+.cases .tag{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#4a5aa8}
+.split{display:grid;grid-template-columns:1.4fr 1fr;gap:60px;align-items:start}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 22px 26px}
+.timeline li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--navy)}
+.timeline span{display:block;font-size:13px;font-weight:700;color:#4a5aa8}
+.timeline strong{display:block;color:var(--navy);font-size:16px}
+.note{margin-top:24px;font-size:15px;color:var(--muted)}
+.note a{text-decoration:underline;font-weight:700;color:var(--navy)}
+.clients{padding:0 var(--pad) 60px;text-align:center;color:var(--muted);font-size:15px}
+.clients strong{color:var(--navy)}
+@media(max-width:900px){
+  .stats{grid-template-columns:1fr 1fr;margin-top:0;padding-top:30px;gap:14px}
+  .stats div{border:1px solid var(--line);box-shadow:none}
+  .grid3{grid-template-columns:1fr 1fr}
+  .cases,.split{grid-template-columns:1fr;gap:36px}
+}
+@media(max-width:460px){.grid3,.stats{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
